@@ -1,0 +1,71 @@
+Default float: float32
+{'mode': 'learn', 'type': 'mnist', 'width': 3, 'height': 3, 'num_examples': 5000, 'aeclass': 'CubeSpaceAE_AMA4Conv', 'comment': 'kltune2', 'hash': '05-06T11:21:55.052SEED1INVSSAMESEEDNOISYTRAINNormTest'}
+loaded. picsize: [48, 48]
+(5000, 2, 48, 48, 1)
+normalized shape: (48, 48, 1) (48, 48, 1)
+class precedence list:
+  <class 'latplan.model.ConvolutionalConcreteDetNormalizedLogitAddBidirectionalTransitionAEPlus'>
+  <class 'latplan.mixins.encoder_decoder.StridedConvolutionalMixin'>
+  <class 'latplan.mixins.encoder_decoder.ConvolutionalMixin'>
+  <class 'latplan.model.ConcreteDetNormalizedLogitAddBidirectionalTransitionAEPlus'>
+  <class 'latplan.model.DetActionMixin'>
+  <class 'latplan.model.NormalizedLogitAddBidirectionalMixin'>
+  <class 'latplan.model.NormalizedLogitAddPreconditionMixin'>
+  <class 'latplan.model.NormalizedLogitAddEffectMixin'>
+  <class 'latplan.model.LogitEffectMixin'>
+  <class 'latplan.model.BaseActionMixinAMA4Plus'>
+  <class 'latplan.model.BidirectionalMixin'>
+  <class 'latplan.model.PreconditionMixin'>
+  <class 'latplan.model.EffectMixin'>
+  <class 'latplan.model.BaseActionMixin'>
+  <class 'latplan.model.TransitionWrapper'>
+  <class 'latplan.model.StateAE'>
+  <class 'latplan.mixins.latent.ConcreteLatentMixin'>
+  <class 'latplan.model.EarlyStopMixin'>
+  <class 'latplan.mixins.encoder_decoder.FullConnectedMixin'>
+  <class 'latplan.mixins.encoder_decoder.EncoderDecoderMixin'>
+  <class 'latplan.model.AE'>
+  <class 'latplan.network.Network'>
+  <class 'object'>
+clearning tf session
+cleared tf session
+Building networks
+building a convolutional encoder
+pool per layer: 1 depth: 2 total pool: 1 H: 48 W: 48 dH: 0 dW: 0
+<keras.layers.convolutional.Conv2D object at 0x1459069f91d0>
+[0, 48, 48, 1] -> (0, 48, 48, 32) : <keras.layers.convolutional.Conv2D object at 0x1459069f91d0>
+<keras.layers.normalization.BatchNormalization object at 0x145907d34890>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.normalization.BatchNormalization object at 0x145907d34890>
+<keras.layers.core.Dropout object at 0x145907d34550>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.core.Dropout object at 0x145907d34550>
+<keras.layers.convolutional.Conv2D object at 0x145907d34810>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.convolutional.Conv2D object at 0x145907d34810>
+<keras.layers.normalization.BatchNormalization object at 0x145907d34c90>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.normalization.BatchNormalization object at 0x145907d34c90>
+<keras.layers.core.Dropout object at 0x145907d34a90>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.core.Dropout object at 0x145907d34a90>
+latent space shape is (48, 48, 32) : 300 propositions in total
+building a convolutional decoder
+pool per layer: 1 depth: 2 total pool: 1 H: 48 W: 48 dH: 0 dW: 0
+<keras.layers.core.Reshape object at 0x145907d3e450>
+[0, 48, 48, 32] -> (0, 48, 48, 32) : <keras.layers.core.Reshape object at 0x145907d3e450>
+<keras.layers.convolutional.Conv2DTranspose object at 0x145907d3e850>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.convolutional.Conv2DTranspose object at 0x145907d3e850>
+<keras.layers.normalization.BatchNormalization object at 0x145907d3eed0>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.normalization.BatchNormalization object at 0x145907d3eed0>
+<keras.layers.core.Dropout object at 0x145907d3e6d0>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.core.Dropout object at 0x145907d3e6d0>
+<keras.layers.convolutional.Conv2DTranspose object at 0x145907d45090>
+(0, 48, 48, 32) -> (0, 48, 48, 1) : <keras.layers.convolutional.Conv2DTranspose object at 0x145907d45090>
+Network built
+Building auxiliary networks
+Auxiliary network built
+Compiling networks
+there are 1 networks.
+there are 1 optimizers.
+there are 1 losses.
+compiling <keras.engine.training.Model object at 0x145903059fd0> with <keras_radam.optimizers.RAdam object at 0x145902a59710>, <function BaseActionMixinAMA4Plus._build_primary.<locals>.loss at 0x14590305d320>.
+Network compiled
+Saving the network to samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED1INVSSAMESEEDNOISYTRAINNormTest/
+saving additional networks
+Network saved

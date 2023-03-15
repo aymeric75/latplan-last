@@ -1,0 +1,1966 @@
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3
+Default float: float32
+in ama3-planner 1
+samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2
+@[     1.690 +     1.690] loaded puzzle
+Loading networks from samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/ (with failure allowed)
+Building networks
+building a convolutional encoder
+pool per layer: 1 depth: 2 total pool: 1 H: 48 W: 48 dH: 0 dW: 0
+<keras.layers.convolutional.Conv2D object at 0x14c23629b790>
+[0, 48, 48, 1] -> (0, 48, 48, 32) : <keras.layers.convolutional.Conv2D object at 0x14c23629b790>
+<keras.layers.normalization.BatchNormalization object at 0x14c23629be50>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.normalization.BatchNormalization object at 0x14c23629be50>
+<keras.layers.core.Dropout object at 0x14c23629bc50>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.core.Dropout object at 0x14c23629bc50>
+<keras.layers.convolutional.Conv2D object at 0x14c23629bdd0>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.convolutional.Conv2D object at 0x14c23629bdd0>
+<keras.layers.normalization.BatchNormalization object at 0x14c2361da290>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.normalization.BatchNormalization object at 0x14c2361da290>
+<keras.layers.core.Dropout object at 0x14c2361da090>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.core.Dropout object at 0x14c2361da090>
+latent space shape is (48, 48, 32) : 300 propositions in total
+building a convolutional decoder
+pool per layer: 1 depth: 2 total pool: 1 H: 48 W: 48 dH: 0 dW: 0
+<keras.layers.core.Reshape object at 0x14c2361daa10>
+[0, 48, 48, 32] -> (0, 48, 48, 32) : <keras.layers.core.Reshape object at 0x14c2361daa10>
+<keras.layers.convolutional.Conv2DTranspose object at 0x14c2361daf50>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.convolutional.Conv2DTranspose object at 0x14c2361daf50>
+<keras.layers.normalization.BatchNormalization object at 0x14c2361e2450>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.normalization.BatchNormalization object at 0x14c2361e2450>
+<keras.layers.core.Dropout object at 0x14c2361e2090>
+(0, 48, 48, 32) -> (0, 48, 48, 32) : <keras.layers.core.Dropout object at 0x14c2361e2090>
+<keras.layers.convolutional.Conv2DTranspose object at 0x14c2361e2510>
+(0, 48, 48, 32) -> (0, 48, 48, 1) : <keras.layers.convolutional.Conv2DTranspose object at 0x14c2361e2510>
+Network built
+Building auxiliary networks
+Auxiliary network built
+loaded NET0.H5 WEIGHTS
+loading additional networks
+loaded NPZ WEIGHTS
+Network loaded
+@[     8.205 +     6.515] loaded sae
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003
+in ama3-planner 2
+@[     8.206 +     0.000] loaded puzzle 2
+@[     8.206 +     0.000] loading init/goal
+init (input) min: -1.930058561328005 max: 2.9983655876925748
+init (recon) min: -1.8891059 max: 2.8603075
+init MSE: 0.0002265756876049931
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.0003054235500499624
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[    14.549 +     6.344] loaded init/goal
+@[    14.549 +     0.000] start planning
+@[    14.549 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[    14.735 +     0.186] finished generating problem
+@[    14.735 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1777217): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777217): mem: 8000000 kB, time: 600 sec
+limit.sh(1777217): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1777217): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777217): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1777230): exiting...
+[32;1m--------------------------------------------------------
+Result:
+[t=0.784469s, 23060 KB] Plan cost: 13
+--------------------------------------------------------[0m
+/g100_work/uBS21_InfGer_0/latplan5/problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.plan
+limit.sh(1777217): The program successfully finished.
+@[    60.120 +    45.384] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012
+in ama3-planner 2
+@[    60.120 +     0.000] loaded puzzle 2
+@[    60.120 +     0.000] loading init/goal
+init (input) min: -1.9381339643739712 max: 3.156333117788307
+init (recon) min: -1.8854452 max: 2.8750358
+init MSE: 0.0002671569925293026
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542357052264235
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[    62.470 +     2.350] loaded init/goal
+@[    62.470 +     0.000] start planning
+@[    62.470 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[    62.655 +     0.186] finished generating problem
+@[    62.656 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1777443): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777443): mem: 8000000 kB, time: 600 sec
+limit.sh(1777443): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1777443): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777443): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1777456): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1777443): Error occured. status: 2
+@[    68.422 +     5.767] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018
+in ama3-planner 2
+@[    68.422 +     0.000] loaded puzzle 2
+@[    68.422 +     0.000] loading init/goal
+init (input) min: -1.9382502640929606 max: 3.222899560832561
+init (recon) min: -1.8851582 max: 2.9721086
+init MSE: 0.00024644991544199287
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.0003054234057896318
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[    70.609 +     2.187] loaded init/goal
+@[    70.609 +     0.000] start planning
+@[    70.609 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[    70.793 +     0.184] finished generating problem
+@[    70.793 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1777559): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777559): mem: 8000000 kB, time: 600 sec
+limit.sh(1777559): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1777559): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777559): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1777572): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1777559): Error occured. status: 2
+@[    76.501 +     5.708] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019
+in ama3-planner 2
+@[    76.502 +     0.000] loaded puzzle 2
+@[    76.502 +     0.000] loading init/goal
+init (input) min: -2.146440791804289 max: 3.158903413052018
+init (recon) min: -2.08489 max: 3.1166255
+init MSE: 0.00031862008474989984
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.0003054235187447999
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[    78.887 +     2.386] loaded init/goal
+@[    78.887 +     0.000] start planning
+@[    78.887 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[    79.075 +     0.187] finished generating problem
+@[    79.075 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1777676): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777676): mem: 8000000 kB, time: 600 sec
+limit.sh(1777676): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1777676): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777676): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1777689): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1777676): Error occured. status: 2
+@[    84.615 +     5.540] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014
+in ama3-planner 2
+@[    84.615 +     0.000] loaded puzzle 2
+@[    84.615 +     0.000] loading init/goal
+init (input) min: -1.9381339643739712 max: 3.216307662910465
+init (recon) min: -1.9125773 max: 2.9693522
+init MSE: 0.00024900854389143373
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140294
+goal MSE: 0.00030542350996177727
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[    86.912 +     2.297] loaded init/goal
+@[    86.912 +     0.000] start planning
+@[    86.913 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[    87.100 +     0.187] finished generating problem
+@[    87.100 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1777814): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777814): mem: 8000000 kB, time: 600 sec
+limit.sh(1777814): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1777814): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777814): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1777831): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1777814): Error occured. status: 2
+@[    92.697 +     5.597] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010
+in ama3-planner 2
+@[    92.697 +     0.000] loaded puzzle 2
+@[    92.697 +     0.000] loading init/goal
+init (input) min: -1.893664656073086 max: 2.98708609222151
+init (recon) min: -1.8716218 max: 2.9044118
+init MSE: 0.00020679992392383254
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.00030542359375418816
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[    95.208 +     2.511] loaded init/goal
+@[    95.208 +     0.000] start planning
+@[    95.208 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[    95.394 +     0.186] finished generating problem
+@[    95.394 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1777939): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777939): mem: 8000000 kB, time: 600 sec
+limit.sh(1777939): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1777939): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1777939): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1777952): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1777939): Error occured. status: 2
+@[   101.109 +     5.714] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017
+in ama3-planner 2
+@[   101.109 +     0.000] loaded puzzle 2
+@[   101.109 +     0.000] loading init/goal
+init (input) min: -1.930058561328005 max: 3.216307662910465
+init (recon) min: -1.9113051 max: 2.9688313
+init MSE: 0.00023211915050579525
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.0003054233926910212
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   103.652 +     2.543] loaded init/goal
+@[   103.652 +     0.000] start planning
+@[   103.653 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   103.839 +     0.187] finished generating problem
+@[   103.839 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1778055): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778055): mem: 8000000 kB, time: 600 sec
+limit.sh(1778055): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1778055): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778055): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1778068): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1778055): Error occured. status: 2
+@[   109.580 +     5.741] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001
+in ama3-planner 2
+@[   109.581 +     0.000] loaded puzzle 2
+@[   109.581 +     0.000] loading init/goal
+init (input) min: -2.146440791804289 max: 3.158903413052018
+init (recon) min: -2.0715709 max: 3.1213646
+init MSE: 0.00026227801180154435
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.000305423567311211
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   112.033 +     2.453] loaded init/goal
+@[   112.033 +     0.000] start planning
+@[   112.033 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   112.219 +     0.185] finished generating problem
+@[   112.219 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1778172): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778172): mem: 8000000 kB, time: 600 sec
+limit.sh(1778172): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1778172): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778172): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1778185): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1778172): Error occured. status: 2
+@[   117.961 +     5.742] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014
+in ama3-planner 2
+@[   117.961 +     0.000] loaded puzzle 2
+@[   117.961 +     0.000] loading init/goal
+init (input) min: -2.146440791804289 max: 3.158903413052018
+init (recon) min: -2.0666318 max: 3.1032183
+init MSE: 0.00036905623376267093
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.0003054235081147589
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   120.634 +     2.673] loaded init/goal
+@[   120.634 +     0.000] start planning
+@[   120.634 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   120.821 +     0.187] finished generating problem
+@[   120.821 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1778316): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778316): mem: 8000000 kB, time: 600 sec
+limit.sh(1778316): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1778316): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-014/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778316): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1778329): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1778316): Error occured. status: 2
+@[   126.537 +     5.716] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018
+in ama3-planner 2
+@[   126.537 +     0.000] loaded puzzle 2
+@[   126.537 +     0.000] loading init/goal
+init (input) min: -2.054078381981629 max: 3.0885530863866615
+init (recon) min: -1.9927986 max: 3.010106
+init MSE: 0.0002591144846484973
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.00030542356282200475
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   129.047 +     2.510] loaded init/goal
+@[   129.047 +     0.000] start planning
+@[   129.047 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   129.234 +     0.186] finished generating problem
+@[   129.234 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1778432): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778432): mem: 8000000 kB, time: 600 sec
+limit.sh(1778432): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1778432): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-018/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778432): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1778445): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1778432): Error occured. status: 2
+@[   134.758 +     5.525] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016
+in ama3-planner 2
+@[   134.759 +     0.000] loaded puzzle 2
+@[   134.759 +     0.000] loading init/goal
+init (input) min: -2.146440791804289 max: 3.158903413052018
+init (recon) min: -2.0821002 max: 3.1056159
+init MSE: 0.00033535482466356026
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.0003054234595565457
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   137.547 +     2.788] loaded init/goal
+@[   137.547 +     0.000] start planning
+@[   137.547 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   137.733 +     0.186] finished generating problem
+@[   137.733 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1778548): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778548): mem: 8000000 kB, time: 600 sec
+limit.sh(1778548): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1778548): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778548): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1778561): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1778548): Error occured. status: 2
+@[   143.469 +     5.736] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005
+in ama3-planner 2
+@[   143.470 +     0.000] loaded puzzle 2
+@[   143.470 +     0.000] loading init/goal
+init (input) min: -2.054078381981629 max: 3.1288707891593632
+init (recon) min: -1.9912183 max: 3.0510173
+init MSE: 0.0003365501266801835
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.000305423502733301
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   146.101 +     2.631] loaded init/goal
+@[   146.101 +     0.000] start planning
+@[   146.101 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   146.286 +     0.185] finished generating problem
+@[   146.286 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1778664): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778664): mem: 8000000 kB, time: 600 sec
+limit.sh(1778664): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1778664): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778664): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1778677): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1778664): Error occured. status: 2
+@[   151.997 +     5.711] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011
+in ama3-planner 2
+@[   151.997 +     0.000] loaded puzzle 2
+@[   151.997 +     0.000] loading init/goal
+init (input) min: -1.9381339643739712 max: 3.156333117788307
+init (recon) min: -1.8936223 max: 2.8588998
+init MSE: 0.0002759859895500295
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.0003054233709382382
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   154.913 +     2.915] loaded init/goal
+@[   154.913 +     0.000] start planning
+@[   154.913 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   155.098 +     0.186] finished generating problem
+@[   155.099 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1778810): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778810): mem: 8000000 kB, time: 600 sec
+limit.sh(1778810): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1778810): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778810): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1778823): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1778810): Error occured. status: 2
+@[   160.781 +     5.683] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002
+in ama3-planner 2
+@[   160.782 +     0.000] loaded puzzle 2
+@[   160.782 +     0.000] loading init/goal
+init (input) min: -2.125108357064033 max: 3.149249323008702
+init (recon) min: -2.062173 max: 3.1085937
+init MSE: 0.00026189010171191
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.0003054235452671407
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   163.520 +     2.738] loaded init/goal
+@[   163.520 +     0.000] start planning
+@[   163.520 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   163.706 +     0.186] finished generating problem
+@[   163.706 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1778926): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778926): mem: 8000000 kB, time: 600 sec
+limit.sh(1778926): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1778926): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1778926): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1778939): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1778926): Error occured. status: 2
+@[   169.488 +     5.782] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004
+in ama3-planner 2
+@[   169.488 +     0.000] loaded puzzle 2
+@[   169.488 +     0.000] loading init/goal
+init (input) min: -2.146440791804289 max: 3.158903413052018
+init (recon) min: -2.0499637 max: 3.0806038
+init MSE: 0.0003181526518921581
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542355041642097
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   172.436 +     2.949] loaded init/goal
+@[   172.436 +     0.000] start planning
+@[   172.437 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   172.622 +     0.185] finished generating problem
+@[   172.622 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1779042): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779042): mem: 8000000 kB, time: 600 sec
+limit.sh(1779042): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1779042): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779042): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1779055): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1779042): Error occured. status: 2
+@[   178.331 +     5.710] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012
+in ama3-planner 2
+@[   178.332 +     0.000] loaded puzzle 2
+@[   178.332 +     0.000] loading init/goal
+init (input) min: -1.930058561328005 max: 2.98708609222151
+init (recon) min: -1.9011378 max: 2.8766878
+init MSE: 0.0002218075041424092
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.0003054234914001097
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   181.224 +     2.892] loaded init/goal
+@[   181.224 +     0.000] start planning
+@[   181.224 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   181.410 +     0.186] finished generating problem
+@[   181.410 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1779185): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779185): mem: 8000000 kB, time: 600 sec
+limit.sh(1779185): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1779185): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-012/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779185): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1779198): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1779185): Error occured. status: 2
+@[   186.974 +     5.565] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003
+in ama3-planner 2
+@[   186.974 +     0.000] loaded puzzle 2
+@[   186.974 +     0.000] loading init/goal
+init (input) min: -2.125108357064033 max: 3.216307662910465
+init (recon) min: -2.0813806 max: 3.0804596
+init MSE: 0.00023089220494688093
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140294
+goal MSE: 0.00030542350826190514
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   190.023 +     3.049] loaded init/goal
+@[   190.023 +     0.000] start planning
+@[   190.024 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   190.211 +     0.187] finished generating problem
+@[   190.211 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1779301): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779301): mem: 8000000 kB, time: 600 sec
+limit.sh(1779301): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1779301): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-003/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779301): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1779314): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1779301): Error occured. status: 2
+@[   196.003 +     5.792] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000
+in ama3-planner 2
+@[   196.003 +     0.000] loaded puzzle 2
+@[   196.003 +     0.000] loading init/goal
+init (input) min: -2.146440791804289 max: 3.158903413052018
+init (recon) min: -2.0763788 max: 3.0812125
+init MSE: 0.0003239049192538679
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140294
+goal MSE: 0.00030542351387775825
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   198.956 +     2.953] loaded init/goal
+@[   198.956 +     0.000] start planning
+@[   198.956 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   199.142 +     0.186] finished generating problem
+@[   199.142 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1779417): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779417): mem: 8000000 kB, time: 600 sec
+limit.sh(1779417): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1779417): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779417): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1779430): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1779417): Error occured. status: 2
+@[   204.717 +     5.574] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009
+in ama3-planner 2
+@[   204.717 +     0.000] loaded puzzle 2
+@[   204.717 +     0.000] loading init/goal
+init (input) min: -2.125108357064033 max: 3.149249323008702
+init (recon) min: -2.0699031 max: 3.0918553
+init MSE: 0.00023691666667548548
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.00030542347812045076
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   207.918 +     3.201] loaded init/goal
+@[   207.918 +     0.000] start planning
+@[   207.918 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   208.103 +     0.185] finished generating problem
+@[   208.103 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1779555): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779555): mem: 8000000 kB, time: 600 sec
+limit.sh(1779555): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1779555): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779555): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1779568): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1779555): Error occured. status: 2
+@[   213.803 +     5.700] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008
+in ama3-planner 2
+@[   213.804 +     0.000] loaded puzzle 2
+@[   213.804 +     0.000] loading init/goal
+init (input) min: -1.930058561328005 max: 3.216307662910465
+init (recon) min: -1.9004343 max: 2.9602418
+init MSE: 0.00023738364905048583
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542347499613995
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   217.011 +     3.208] loaded init/goal
+@[   217.011 +     0.000] start planning
+@[   217.011 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   217.197 +     0.186] finished generating problem
+@[   217.197 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1779671): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779671): mem: 8000000 kB, time: 600 sec
+limit.sh(1779671): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1779671): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779671): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1779684): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1779671): Error occured. status: 2
+@[   222.771 +     5.573] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011
+in ama3-planner 2
+@[   222.771 +     0.000] loaded puzzle 2
+@[   222.771 +     0.000] loading init/goal
+init (input) min: -1.8770751639510832 max: 2.98708609222151
+init (recon) min: -1.8608068 max: 2.8676808
+init MSE: 0.0002239655461997295
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.0003054235264269651
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   225.890 +     3.119] loaded init/goal
+@[   225.890 +     0.000] start planning
+@[   225.890 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   226.076 +     0.186] finished generating problem
+@[   226.076 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1779790): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779790): mem: 8000000 kB, time: 600 sec
+limit.sh(1779790): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1779790): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-011/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779790): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1779803): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1779790): Error occured. status: 2
+@[   231.845 +     5.769] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007
+in ama3-planner 2
+@[   231.845 +     0.000] loaded puzzle 2
+@[   231.845 +     0.000] loading init/goal
+init (input) min: -1.8770751639510832 max: 2.9983655876925748
+init (recon) min: -1.8741119 max: 2.8952985
+init MSE: 0.0002388307544273294
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542347226375635
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   235.198 +     3.353] loaded init/goal
+@[   235.198 +     0.000] start planning
+@[   235.198 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   235.384 +     0.186] finished generating problem
+@[   235.384 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1779908): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779908): mem: 8000000 kB, time: 600 sec
+limit.sh(1779908): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1779908): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1779908): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1779921): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1779908): Error occured. status: 2
+@[   241.156 +     5.772] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002
+in ama3-planner 2
+@[   241.157 +     0.000] loaded puzzle 2
+@[   241.157 +     0.000] loading init/goal
+init (input) min: -1.930058561328005 max: 3.1288707891593632
+init (recon) min: -1.8987498 max: 2.9187927
+init MSE: 0.00023510986212380437
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542354126856836
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   244.421 +     3.264] loaded init/goal
+@[   244.421 +     0.000] start planning
+@[   244.421 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   244.608 +     0.187] finished generating problem
+@[   244.608 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1780050): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780050): mem: 8000000 kB, time: 600 sec
+limit.sh(1780050): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1780050): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780050): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1780063): exiting...
+[32;1m--------------------------------------------------------
+Result:
+[t=48.5857s, 67660 KB] Plan cost: 25
+--------------------------------------------------------[0m
+/g100_work/uBS21_InfGer_0/latplan5/problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-002/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.plan
+limit.sh(1780050): The program successfully finished.
+@[   338.551 +    93.943] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005
+in ama3-planner 2
+@[   338.551 +     0.000] loaded puzzle 2
+@[   338.551 +     0.000] loading init/goal
+init (input) min: -1.9382502640929606 max: 3.0022268296181864
+init (recon) min: -1.9353843 max: 2.9645915
+init MSE: 0.00028706608275470586
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542356748867544
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   342.049 +     3.498] loaded init/goal
+@[   342.049 +     0.000] start planning
+@[   342.049 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   342.236 +     0.186] finished generating problem
+@[   342.236 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1780600): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780600): mem: 8000000 kB, time: 600 sec
+limit.sh(1780600): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1780600): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-005/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780600): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1780613): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1780600): Error occured. status: 2
+@[   348.006 +     5.770] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001
+in ama3-planner 2
+@[   348.006 +     0.000] loaded puzzle 2
+@[   348.006 +     0.000] loading init/goal
+init (input) min: -1.9381339643739712 max: 3.156333117788307
+init (recon) min: -1.8702586 max: 2.927823
+init MSE: 0.00026195208261333255
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140294
+goal MSE: 0.0003054235203002254
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   351.307 +     3.301] loaded init/goal
+@[   351.307 +     0.000] start planning
+@[   351.307 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   351.492 +     0.184] finished generating problem
+@[   351.492 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1780724): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780724): mem: 8000000 kB, time: 600 sec
+limit.sh(1780724): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1780724): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-001/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780724): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1780737): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1780724): Error occured. status: 2
+@[   357.198 +     5.706] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006
+in ama3-planner 2
+@[   357.198 +     0.000] loaded puzzle 2
+@[   357.198 +     0.000] loading init/goal
+init (input) min: -1.9550954102128109 max: 3.156333117788307
+init (recon) min: -1.992783 max: 2.893672
+init MSE: 0.0003212032444759169
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542345253360323
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   360.819 +     3.621] loaded init/goal
+@[   360.819 +     0.000] start planning
+@[   360.819 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   361.004 +     0.185] finished generating problem
+@[   361.004 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1780866): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780866): mem: 8000000 kB, time: 600 sec
+limit.sh(1780866): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1780866): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780866): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1780879): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1780866): Error occured. status: 2
+@[   366.785 +     5.781] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010
+in ama3-planner 2
+@[   366.786 +     0.000] loaded puzzle 2
+@[   366.786 +     0.000] loading init/goal
+init (input) min: -2.1481318950188513 max: 3.156333117788307
+init (recon) min: -2.0778794 max: 3.0543551
+init MSE: 0.0002773982258484118
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.0003054235478075016
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   370.195 +     3.409] loaded init/goal
+@[   370.195 +     0.000] start planning
+@[   370.195 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   370.381 +     0.187] finished generating problem
+@[   370.381 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1780982): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780982): mem: 8000000 kB, time: 600 sec
+limit.sh(1780982): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1780982): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-010/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1780982): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1780995): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1780982): Error occured. status: 2
+@[   375.927 +     5.546] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019
+in ama3-planner 2
+@[   375.927 +     0.000] loaded puzzle 2
+@[   375.927 +     0.000] loading init/goal
+init (input) min: -1.9381339643739712 max: 3.216307662910465
+init (recon) min: -1.8834873 max: 2.9897175
+init MSE: 0.00021693084677427028
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140294
+goal MSE: 0.00030542345116198254
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   379.682 +     3.755] loaded init/goal
+@[   379.682 +     0.000] start planning
+@[   379.682 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   379.871 +     0.189] finished generating problem
+@[   379.872 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1781098): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781098): mem: 8000000 kB, time: 600 sec
+limit.sh(1781098): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1781098): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-019/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781098): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1781111): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1781098): Error occured. status: 2
+@[   385.446 +     5.575] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017
+in ama3-planner 2
+@[   385.446 +     0.000] loaded puzzle 2
+@[   385.446 +     0.000] loading init/goal
+init (input) min: -2.125108357064033 max: 3.149249323008702
+init (recon) min: -2.0747707 max: 3.0644135
+init MSE: 0.00030522169989829844
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.00030542350132970787
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   388.970 +     3.524] loaded init/goal
+@[   388.970 +     0.000] start planning
+@[   388.971 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   389.157 +     0.187] finished generating problem
+@[   389.157 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1781239): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781239): mem: 8000000 kB, time: 600 sec
+limit.sh(1781239): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1781239): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-017/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781239): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1781252): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1781239): Error occured. status: 2
+@[   394.931 +     5.773] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015
+in ama3-planner 2
+@[   394.931 +     0.000] loaded puzzle 2
+@[   394.931 +     0.000] loading init/goal
+init (input) min: -2.125108357064033 max: 3.156333117788307
+init (recon) min: -2.0793197 max: 3.0691607
+init MSE: 0.0003221025244275704
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140294
+goal MSE: 0.00030542348575534646
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   398.729 +     3.798] loaded init/goal
+@[   398.729 +     0.000] start planning
+@[   398.729 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   399.016 +     0.287] finished generating problem
+@[   399.016 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1781355): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781355): mem: 8000000 kB, time: 600 sec
+limit.sh(1781355): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1781355): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781355): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1781368): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1781355): Error occured. status: 2
+@[   404.768 +     5.752] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000
+in ama3-planner 2
+@[   404.769 +     0.000] loaded puzzle 2
+@[   404.769 +     0.000] loading init/goal
+init (input) min: -1.9382502640929606 max: 3.0022268296181864
+init (recon) min: -1.9631851 max: 2.9897013
+init MSE: 0.0002864150428433271
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.0003054235188311862
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   408.383 +     3.614] loaded init/goal
+@[   408.383 +     0.000] start planning
+@[   408.383 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   408.571 +     0.188] finished generating problem
+@[   408.571 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1781471): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781471): mem: 8000000 kB, time: 600 sec
+limit.sh(1781471): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1781471): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-000/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781471): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1781484): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1781471): Error occured. status: 2
+@[   414.317 +     5.746] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008
+in ama3-planner 2
+@[   414.317 +     0.000] loaded puzzle 2
+@[   414.317 +     0.000] loading init/goal
+init (input) min: -1.8770751639510832 max: 2.98708609222151
+init (recon) min: -1.8724716 max: 2.899713
+init MSE: 0.00021878301801529245
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.0003054235123923589
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   418.311 +     3.994] loaded init/goal
+@[   418.311 +     0.000] start planning
+@[   418.311 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   418.499 +     0.188] finished generating problem
+@[   418.499 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1781614): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781614): mem: 8000000 kB, time: 600 sec
+limit.sh(1781614): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1781614): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-008/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781614): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1781627): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1781614): Error occured. status: 2
+@[   424.259 +     5.760] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015
+in ama3-planner 2
+@[   424.260 +     0.000] loaded puzzle 2
+@[   424.260 +     0.000] loading init/goal
+init (input) min: -1.9382502640929606 max: 3.216307662910465
+init (recon) min: -1.9496164 max: 2.9902704
+init MSE: 0.00024014967930780399
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542352946613216
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   428.007 +     3.747] loaded init/goal
+@[   428.007 +     0.000] start planning
+@[   428.007 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   428.196 +     0.189] finished generating problem
+@[   428.196 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1781730): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781730): mem: 8000000 kB, time: 600 sec
+limit.sh(1781730): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1781730): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-015/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781730): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1781743): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1781730): Error occured. status: 2
+@[   433.933 +     5.736] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013
+in ama3-planner 2
+@[   433.933 +     0.000] loaded puzzle 2
+@[   433.933 +     0.000] loading init/goal
+init (input) min: -1.9163299400142446 max: 3.216307662910465
+init (recon) min: -1.8839695 max: 2.9629636
+init MSE: 0.00021417037343106972
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140296
+goal MSE: 0.0003054234210579931
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   437.952 +     4.019] loaded init/goal
+@[   437.952 +     0.000] start planning
+@[   437.952 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   438.140 +     0.188] finished generating problem
+@[   438.140 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1781846): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781846): mem: 8000000 kB, time: 600 sec
+limit.sh(1781846): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1781846): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781846): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1781859): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1781846): Error occured. status: 2
+@[   443.832 +     5.691] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007
+in ama3-planner 2
+@[   443.832 +     0.000] loaded puzzle 2
+@[   443.832 +     0.000] loading init/goal
+init (input) min: -1.930058561328005 max: 2.9840983285236162
+init (recon) min: -1.8999017 max: 2.9048395
+init MSE: 0.00024533565437093733
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.0003054235236127251
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   447.699 +     3.867] loaded init/goal
+@[   447.699 +     0.000] start planning
+@[   447.699 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   447.887 +     0.188] finished generating problem
+@[   447.887 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1781988): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781988): mem: 8000000 kB, time: 600 sec
+limit.sh(1781988): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1781988): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-007/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1781988): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1782001): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1781988): Error occured. status: 2
+@[   453.126 +     5.239] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004
+in ama3-planner 2
+@[   453.126 +     0.000] loaded puzzle 2
+@[   453.126 +     0.000] loading init/goal
+init (input) min: -1.9382502640929606 max: 3.222899560832561
+init (recon) min: -1.8974202 max: 2.9564562
+init MSE: 0.00022876778700814014
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.000305423446599053
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   457.047 +     3.921] loaded init/goal
+@[   457.047 +     0.000] start planning
+@[   457.047 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   457.235 +     0.188] finished generating problem
+@[   457.235 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1782105): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782105): mem: 8000000 kB, time: 600 sec
+limit.sh(1782105): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1782105): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-004/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782105): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1782118): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1782105): Error occured. status: 2
+@[   462.941 +     5.706] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006
+in ama3-planner 2
+@[   462.941 +     0.000] loaded puzzle 2
+@[   462.941 +     0.000] loading init/goal
+init (input) min: -1.8788883734696935 max: 3.0022268296181864
+init (recon) min: -1.8742986 max: 2.9678144
+init MSE: 0.00023084412172732818
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542350143289036
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   467.189 +     4.248] loaded init/goal
+@[   467.189 +     0.000] start planning
+@[   467.189 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   467.376 +     0.188] finished generating problem
+@[   467.377 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1782221): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782221): mem: 8000000 kB, time: 600 sec
+limit.sh(1782221): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1782221): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/014-006/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782221): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1782234): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1782221): Error occured. status: 2
+@[   473.135 +     5.758] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013
+in ama3-planner 2
+@[   473.135 +     0.000] loaded puzzle 2
+@[   473.135 +     0.000] loading init/goal
+init (input) min: -1.930058561328005 max: 3.216307662910465
+init (recon) min: -1.9116542 max: 3.0017104
+init MSE: 0.0002377983600463831
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.00030542353577096826
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   477.138 +     4.003] loaded init/goal
+@[   477.138 +     0.000] start planning
+@[   477.138 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   477.331 +     0.193] finished generating problem
+@[   477.331 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1782367): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782367): mem: 8000000 kB, time: 600 sec
+limit.sh(1782367): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1782367): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-013/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782367): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1782380): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1782367): Error occured. status: 2
+@[   483.107 +     5.776] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016
+in ama3-planner 2
+@[   483.108 +     0.000] loaded puzzle 2
+@[   483.108 +     0.000] loading init/goal
+init (input) min: -1.9550954102128109 max: 2.9840983285236162
+init (recon) min: -1.9870591 max: 2.8749652
+init MSE: 0.0002703487650156526
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.091434 max: 3.1140296
+goal MSE: 0.000305423516042319
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   487.445 +     4.337] loaded init/goal
+@[   487.445 +     0.000] start planning
+@[   487.445 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   487.633 +     0.188] finished generating problem
+@[   487.633 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1782483): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782483): mem: 8000000 kB, time: 600 sec
+limit.sh(1782483): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1782483): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-016/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782483): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1782496): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1782483): Error occured. status: 2
+@[   493.334 +     5.700] finished planning
+sub_problem_dir
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009
+in ama3-planner 2
+@[   493.334 +     0.000] loaded puzzle 2
+@[   493.334 +     0.000] loading init/goal
+init (input) min: -1.9382502640929606 max: 3.009809684373118
+init (recon) min: -1.9296395 max: 2.9670627
+init MSE: 0.00023546403502672732
+goal (input) min: -2.146440791804289 max: 3.158903413052018
+goal (recon) min: -2.0914342 max: 3.1140294
+goal MSE: 0.00030542347241643126
+problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_init_goal_reconstruction.1.png
+threshold value: 0.25
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.125
+0 images have some panels which are unlike any panels
+0 images have all panels which match exactly 1 panel each
+2 images have some panels which match >2 panels
+threshold value: 0.0625
+0 images have some panels which are unlike any panels
+2 images have all panels which match exactly 1 panel each
+0 images have some panels which match >2 panels
+threshold found
+0 images have duplicated tiles
+2 images have no duplicated tiles
+@[   497.477 +     4.143] loaded init/goal
+@[   497.477 +     0.000] start planning
+@[   497.477 +     0.000] start generating problem
+['helper/ama3-problem.sh', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl']
+helper/ama3-problem.sh problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.ig problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl
+@[   497.667 +     0.190] finished generating problem
+@[   497.667 +     0.000] start planning
+['helper/fd-latest.sh', '--search astar(blind())', 'problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl', 'samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl']
+Running limit.sh(1782599): -t 600 -m 8000000 -- planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782599): mem: 8000000 kB, time: 600 sec
+limit.sh(1782599): pwd: /g100_work/uBS21_InfGer_0/latplan5
+limit.sh(1782599): command to execute: planner-scripts/fd-latest-clean -o '--search astar(blind())' -- problem-generators/backup-propositional/vanilla/puzzle-mnist-3-3/007-009/ama3_samples_puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2_logs_05-06T11:21:55.052SEED2_domain_blind_problem.pddl samples/puzzle_mnist_3_3_5000_CubeSpaceAE_AMA4Conv_kltune2/logs/05-06T11:21:55.052SEED2/domain.pddl
+limit.sh(1782599): note: time precision is 0.5 sec
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5/planner-scripts ...
+finding FD installation from /g100_work/uBS21_InfGer_0/latplan5 ...
+common.sh(1782612): exiting...
+[32;1m--------------------------------------------------------
+Result:
+--------------------------------------------------------[0m
+limit.sh(1782599): Error occured. status: 2
+@[   503.229 +     5.561] finished planning

@@ -1,0 +1,8 @@
+Default float: float32
+{'mode': 'learn', 'type': 'mnist', 'width': 3, 'height': 3, 'num_examples': 5000, 'aeclass': 'CubeSpaceAE_AMA4Conv', 'comment': 'kltune2', 'hash': '05-06T11:21:55.052SEED1N22'}
+x_train[0] shape
+(28, 28)
+x_train[0] shape
+(784,)
+x_train[0] shape
+(784,)
